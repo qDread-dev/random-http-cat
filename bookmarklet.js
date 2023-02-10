@@ -11,17 +11,21 @@ let statusCodes = [
 let url = `https://http.cat/${statusCodes[randNum]}`;
 
 
+let elementExists = document.contains(document.getElementById('find-me'))
+
+if(!elementExists){
 document.body.innerHTML = "";
-
-
 var img = document.createElement('img');
 img.src = url;
-img.setAttribute("id", "cat-img");
-document.body.appendChild(img);
-
-
-var catImg = document.getElementById('cat-img');
-catImg.style.setProperty("display", "flex");
-catImg.style.setProperty("align-items", "center");
-catImg.style.setProperty("justify-content", "center");
-
+img.id = "cat-img";
+var imgWrapper = document.createElement('div');
+imgWrapper.id = "cat-wrap";
+imgWrapper.style.display = 'flex';
+imgWrapper.style.justifyContent = 'center';
+imgWrapper.appendChild(img);
+document.body.appendChild(imgWrapper);
+var checkElement = document.createElement('div');
+checkElement.id = "find-me";}
+else{
+	img.src = url;
+}
