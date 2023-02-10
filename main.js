@@ -1,6 +1,6 @@
-import random
+let randNum = Math.floor(Math.random() * 60);
 
-statusCodes = [
+let statusCodes = [
 	100, 101, 102, 200, 201, 202, 203, 204, 205, 206,
 	207, 208, 226, 300, 301, 302, 303, 304, 305, 306,
 	307, 308, 400, 401, 402, 403, 404, 405, 406, 407,
@@ -8,8 +8,6 @@ statusCodes = [
 	418, 422, 423, 424, 426, 428, 429, 431, 451, 500,
 	501, 502, 503, 504, 505, 506, 507, 508, 510, 511]
 
-randCode = statusCodes[random.randint(0, 59)]
+let url = `https://http.cat/${statusCodes[randNum]}`
 
-url = f"https://http.cat/{randCode}"
-
-print(url)
+console.log(url)
