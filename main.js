@@ -20,6 +20,7 @@ var imgWrapper = document.createElement('div');
 imgWrapper.id = "cat-wrap";
 imgWrapper.style.display = 'flex';
 imgWrapper.style.justifyContent = 'center';
+imgWrapper.style.alignItems = 'center';
 imgWrapper.style.color = '#202124';
 imgWrapper.appendChild(img);
 document.body.appendChild(imgWrapper);	
