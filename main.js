@@ -23,8 +23,12 @@ imgWrapper.style.justifyContent = 'center';
 imgWrapper.style.alignItems = 'center';
 imgWrapper.style.color = '#202124';
 imgWrapper.appendChild(img);
+
 document.body.appendChild(imgWrapper);	
 
 var createBtn = document.createElement('button');
 createBtn.id = 'catBtn';
 createBtn.innerText = 'new cat';
+
+
+document.body.appendChild(createBtn);
