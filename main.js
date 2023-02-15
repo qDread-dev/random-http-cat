@@ -28,7 +28,5 @@ document.body.appendChild(imgWrapper);
 
 var createBtn = document.createElement('button');
 createBtn.id = 'catBtn';
-createBtn.innerText = 'new cat';
-
 
 document.body.appendChild(createBtn);
