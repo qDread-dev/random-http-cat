@@ -11,7 +11,7 @@ var statusCodes = [
 var url = `https://http.cat/${statusCodes[randNum]}`;
 
 
-
+// Adds the img
 document.body.innerHTML = "";
 var img = document.createElement('img');
 img.src = url;
@@ -24,3 +24,7 @@ imgWrapper.style.alignItems = 'center';
 imgWrapper.style.color = '#202124';
 imgWrapper.appendChild(img);
 document.body.appendChild(imgWrapper);	
+
+var createBtn = document.createElement('button');
+createBtn.id = 'catBtn';
+createBtn.innerText = 'new cat';
